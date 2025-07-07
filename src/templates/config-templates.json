@@ -1,0 +1,333 @@
+{
+  "templates": {
+    "minimal": {
+      "name": "Minimal Navigation",
+      "description": "Simple navigation with basic links",
+      "config": {
+        "widget": {
+          "title": "Quick Menu",
+          "position": "top-right",
+          "theme": {
+            "primary": "rgba(255, 255, 255, 0.95)",
+            "accent": "rgba(0, 123, 255, 0.3)",
+            "text": "#333",
+            "border": "rgba(0, 0, 0, 0.1)"
+          }
+        },
+        "cube": {
+          "icon": "☰",
+          "size": 50
+        },
+        "sections": [
+          {
+            "id": "nav",
+            "title": "📋 Navigation",
+            "type": "links",
+            "expanded": true,
+            "links": [
+              { "icon": "🏠", "text": "Home", "url": "/" },
+              { "icon": "📖", "text": "About", "url": "/about" },
+              { "icon": "📞", "text": "Contact", "url": "/contact" }
+            ]
+          }
+        ]
+      }
+    },
+    
+    "chat-assistant": {
+      "name": "AI Chat Assistant",
+      "description": "Smart assistant with chat functionality",
+      "config": {
+        "widget": {
+          "title": "AI Assistant",
+          "position": "top-right",
+          "theme": {
+            "primary": "rgba(0, 0, 0, 0.85)",
+            "accent": "rgba(100, 150, 255, 0.3)",
+            "text": "white",
+            "border": "rgba(255, 255, 255, 0.2)"
+          }
+        },
+        "cube": {
+          "icon": "🤖",
+          "size": 60
+        },
+        "sections": [
+          {
+            "id": "chat",
+            "title": "💬 AI Assistant",
+            "type": "chat",
+            "expanded": true,
+            "config": {
+              "welcomeMessage": "Hi! I'm your AI assistant. How can I help you today?",
+              "placeholder": "Ask me anything...",
+              "responses": {
+                "help": "I can help you navigate, answer questions, or assist with tasks!",
+                "default": ["How can I help you?", "What would you like to know?"]
+              }
+            }
+          },
+          {
+            "id": "nav",
+            "title": "🏠 Quick Links",
+            "type": "links",
+            "expanded": false,
+            "links": [
+              { "icon": "🏠", "text": "Home", "url": "/" },
+              { "icon": "📞", "text": "Contact", "url": "/contact" }
+            ]
+          }
+        ]
+      }
+    },
+    
+    "business-hub": {
+      "name": "Business Hub",
+      "description": "Professional business navigation with tools",
+      "config": {
+        "widget": {
+          "title": "Business Hub",
+          "position": "top-right",
+          "theme": {
+            "primary": "rgba(25, 25, 50, 0.9)",
+            "accent": "rgba(0, 123, 255, 0.4)",
+            "text": "white",
+            "border": "rgba(255, 255, 255, 0.2)"
+          }
+        },
+        "cube": {
+          "icon": "💼",
+          "size": 65
+        },
+        "socialLinks": [
+          { "icon": "💼", "url": "https://linkedin.com/company/example", "title": "LinkedIn" },
+          { "icon": "📧", "url": "mailto:business@example.com", "title": "Email" }
+        ],
+        "sections": [
+          {
+            "id": "chat",
+            "title": "🤖 Business Assistant",
+            "type": "chat",
+            "expanded": true,
+            "config": {
+              "welcomeMessage": "Welcome to our business portal! How can I help you today?",
+              "responses": {
+                "services": "We offer consulting, analytics, and custom development services.",
+                "pricing": "Contact us for enterprise pricing and custom solutions.",
+                "default": ["How can I help your business grow?"]
+              }
+            }
+          },
+          {
+            "id": "services",
+            "title": "🛠️ Our Services",
+            "type": "links",
+            "expanded": false,
+            "links": [
+              { "icon": "💻", "text": "Consulting", "url": "/consulting" },
+              { "icon": "📊", "text": "Analytics", "url": "/analytics" },
+              { "icon": "🔧", "text": "Support", "url": "/support" }
+            ]
+          },
+          {
+            "id": "tools",
+            "title": "🔧 Business Tools",
+            "type": "tools",
+            "expanded": false,
+            "tools": [
+              {
+                "icon": "📊",
+                "text": "ROI Calculator",
+                "action": "roiCalculator",
+                "description": "Calculate your return on investment"
+              },
+              {
+                "icon": "📅",
+                "text": "Schedule Meeting",
+                "action": "scheduleMeeting",
+                "description": "Book a consultation"
+              }
+            ]
+          },
+          {
+            "id": "contact",
+            "title": "📞 Contact",
+            "type": "actions",
+            "expanded": false,
+            "actions": [
+              { "icon": "📞", "text": "Call Sales", "action": "call", "url": "tel:+1234567890" },
+              { "icon": "📧", "text": "Email", "action": "email", "url": "mailto:sales@example.com" }
+            ]
+          }
+        ]
+      }
+    },
+    
+    "developer-tools": {
+      "name": "Developer Tools",
+      "description": "Development tools and utilities",
+      "config": {
+        "widget": {
+          "title": "Dev Tools",
+          "position": "top-right",
+          "theme": {
+            "primary": "rgba(20, 20, 20, 0.95)",
+            "accent": "rgba(0, 255, 127, 0.3)",
+            "text": "#00ff7f",
+            "border": "rgba(0, 255, 127, 0.2)"
+          }
+        },
+        "cube": {
+          "icon": "⚡",
+          "size": 55
+        },
+        "sections": [
+          {
+            "id": "tools",
+            "title": "🔧 Dev Tools",
+            "type": "tools",
+            "expanded": true,
+            "tools": [
+              {
+                "icon": "🎨",
+                "text": "Color Picker",
+                "action": "colorPicker",
+                "description": "Pick colors from page"
+              },
+              {
+                "icon": "📏",
+                "text": "Ruler",
+                "action": "ruler",
+                "description": "Measure elements"
+              },
+              {
+                "icon": "🔍",
+                "text": "Inspector",
+                "action": "inspector",
+                "description": "Inspect page elements"
+              }
+            ]
+          },
+          {
+            "id": "links",
+            "title": "🔗 Quick Links",
+            "type": "links",
+            "expanded": false,
+            "links": [
+              { "icon": "📚", "text": "Documentation", "url": "/docs" },
+              { "icon": "🐛", "text": "Bug Reports", "url": "/issues" },
+              { "icon": "⚙️", "text": "Settings", "url": "/settings" }
+            ]
+          }
+        ]
+      }
+    },
+    
+    "media-gallery": {
+      "name": "Media Gallery",
+      "description": "Media showcase with video and content",
+      "config": {
+        "widget": {
+          "title": "Media Gallery",
+          "position": "top-right",
+          "theme": {
+            "primary": "rgba(40, 20, 60, 0.9)",
+            "accent": "rgba(255, 100, 150, 0.4)",
+            "text": "white",
+            "border": "rgba(255, 255, 255, 0.15)"
+          }
+        },
+        "cube": {
+          "icon": "🎬",
+          "size": 60
+        },
+        "sections": [
+          {
+            "id": "media",
+            "title": "🎬 Featured Content",
+            "type": "media",
+            "expanded": true,
+            "content": {
+              "video": {
+                "title": "Watch Our Latest Video",
+                "description": "Check out our newest content",
+                "url": "https://youtube.com/watch?v=example"
+              },
+              "advertisement": {
+                "title": "Special Offer",
+                "content": "Limited Time Deal!",
+                "url": "/special-offer"
+              }
+            }
+          },
+          {
+            "id": "gallery",
+            "title": "🖼️ Gallery",
+            "type": "links",
+            "expanded": false,
+            "links": [
+              { "icon": "📸", "text": "Photos", "url": "/gallery/photos" },
+              { "icon": "🎥", "text": "Videos", "url": "/gallery/videos" },
+              { "icon": "🎨", "text": "Art", "url": "/gallery/art" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  
+  "quickStart": {
+    "steps": [
+      {
+        "title": "Choose a Template",
+        "description": "Select a pre-built template that matches your needs",
+        "action": "selectTemplate"
+      },
+      {
+        "title": "Customize Content",
+        "description": "Edit links, text, and settings to match your website",
+        "action": "customizeContent"
+      },
+      {
+        "title": "Pick Colors & Style",
+        "description": "Choose colors and positioning that fits your design",
+        "action": "customizeStyle"
+      },
+      {
+        "title": "Add to Website",
+        "description": "Copy the generated code and add to your HTML",
+        "action": "generateCode"
+      }
+    ]
+  },
+  
+  "validation": {
+    "required": {
+      "widget": ["title"],
+      "cube": ["icon"],
+      "sections": ["id", "title", "type"]
+    },
+    "sectionTypes": {
+      "chat": {
+        "required": ["config"],
+        "optional": ["expanded"]
+      },
+      "links": {
+        "required": ["links"],
+        "optional": ["expanded"]
+      },
+      "tools": {
+        "required": ["tools"],
+        "optional": ["expanded"]
+      },
+      "actions": {
+        "required": ["actions"],
+        "optional": ["expanded"]
+      },
+      "media": {
+        "required": ["content"],
+        "optional": ["expanded"]
+      }
+    }
+  }
+} 

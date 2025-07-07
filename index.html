@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Navigation Cube v2.1.0</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+            color: #e2e8f0;
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 1rem 0;
+            background: linear-gradient(45deg, #4a90e2, #7bb3f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+        .version {
+            display: inline-block;
+            background: rgba(74, 144, 226, 0.2);
+            color: #4a90e2;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .link-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+        .link-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: #4a90e2;
+        }
+        .link-card p {
+            margin: 0;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        .structure {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            color: #4a90e2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Smart Navigation Cube</h1>
+        <div class="version">v2.1.0 - Refactored & Production Ready</div>
+        <p class="subtitle">Revolutionary 3D navigation widget with origami-style expansion</p>
+        
+        <div class="links">
+            <a href="demo/" class="link-card">
+                <h3>🎮 Live Demo</h3>
+                <p>Interactive demo with controls and examples</p>
+            </a>
+            
+            <a href="docs/README.md" class="link-card">
+                <h3>📚 Documentation</h3>
+                <p>Complete setup and API guide</p>
+            </a>
+            
+            <a href="dist/smart-nav-widget.js" class="link-card">
+                <h3>📦 Download JS</h3>
+                <p>Production bundle (66KB)</p>
+            </a>
+            
+            <a href="dist/smart-nav-widget.css" class="link-card">
+                <h3>🎨 Download CSS</h3>
+                <p>Widget styles (26KB)</p>
+            </a>
+        </div>
+        
+        <div class="structure">
+<span class="highlight">📦 Ready-to-Use Files:</span>
+├── dist/smart-nav-widget.js     ← Production bundle (66KB)
+├── dist/smart-nav-widget.css    ← Styles (26KB)
+└── dist/config-templates.json   ← Templates
+
+<span class="highlight">🎮 Demo:</span>
+└── demo/index.html              ← Live interactive demo
+
+<span class="highlight">📚 Documentation:</span>
+└── docs/                        ← All guides and docs
+        </div>
+        
+        <h3>🚀 Quick Start</h3>
+        <p>Copy <code>dist/smart-nav-widget.js</code> and <code>dist/smart-nav-widget.css</code> to your project!</p>
+    </div>
+</body>
+</html> 

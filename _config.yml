@@ -1,0 +1,71 @@
+# Smart Navigation Cube - GitHub Pages Configuration
+
+# Site settings
+title: "Smart Navigation Cube"
+description: "An elegant 3D navigation widget that transforms into an intelligent origami-style interface"
+url: "https://[YOUR-USERNAME].github.io"
+baseurl: "/cube-nav"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Include these directories and files
+include:
+  - dist/
+  - demo/
+  - docs/
+  - examples/
+
+# Exclude development files
+exclude:
+  - node_modules/
+  - build/
+  - src/
+  - package.json
+  - package-lock.json
+  - .gitignore
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+
+# Collections for documentation
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "page"
+
+# SEO settings
+author: "Your Name"
+twitter:
+  username: your_twitter
+  card: summary_large_image
+
+# Social media
+github_username: your_username
+
+# Analytics (optional)
+google_analytics: # Add your GA tracking ID here
+
+# Repository info
+repository: your_username/cube-nav 

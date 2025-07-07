@@ -1,0 +1,220 @@
+# Smart Navigation Cube - .gitignore
+
+# =============================================================================
+# NODE.JS & NPM
+# =============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# =============================================================================
+# DEVELOPMENT & BUILD
+# =============================================================================
+# Development server logs
+*.log
+
+# Build artifacts (keep dist/ for GitHub Pages)
+# dist/ - commented out because we want dist/ for GitHub Pages
+build/temp/
+build/cache/
+
+# Development environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =============================================================================
+# EDITOR & IDE
+# =============================================================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ / WebStorm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =============================================================================
+# OPERATING SYSTEM
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# TEMPORARY & CACHE FILES
+# =============================================================================
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# =============================================================================
+# PROJECT SPECIFIC
+# =============================================================================
+# Demo server artifacts
+demo/temp/
+demo/cache/
+
+# Documentation builds
+docs/build/
+docs/.vuepress/dist
+
+# Test artifacts
+test/temp/
+test/screenshots/
+test/coverage/
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Archive files (unless needed for releases)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# SECURITY & SENSITIVE DATA
+# =============================================================================
+# API keys and secrets
+.env.secret
+secrets.json
+config/secrets.js
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.cert
+
+# =============================================================================
+# GITHUB PAGES SPECIFIC
+# =============================================================================
+# Keep these files for GitHub Pages:
+# - dist/ (production files)
+# - demo/ (live demo)
+# - docs/ (documentation)
+# - README.md (main page content)
+
+# But ignore GitHub Pages build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# =============================================================================
+# MISC
+# =============================================================================
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test 

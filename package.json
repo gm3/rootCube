@@ -1,0 +1,55 @@
+{
+  "name": "smart-navigation-cube",
+  "version": "2.1.0",
+  "description": "An elegant 3D navigation widget that transforms into an intelligent origami-style interface",
+  "main": "dist/smart-nav-widget.js",
+  "homepage": "https://[YOUR-USERNAME].github.io/cube-nav",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[YOUR-USERNAME]/cube-nav.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[YOUR-USERNAME]/cube-nav/issues"
+  },
+  "keywords": [
+    "navigation",
+    "widget",
+    "3d",
+    "cube",
+    "origami",
+    "ui",
+    "component",
+    "javascript",
+    "css",
+    "responsive"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build/build.js",
+    "dev": "npm run build && npm run serve",
+    "serve": "python -m http.server 8000",
+    "demo": "python -m http.server 8001",
+    "deploy": "npm run build && gh-pages -d .",
+    "predeploy": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linting configured\" && exit 0",
+    "start": "npm run serve"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 
