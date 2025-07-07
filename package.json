@@ -3,13 +3,13 @@
   "version": "2.1.0",
   "description": "An elegant 3D navigation widget that transforms into an intelligent origami-style interface",
   "main": "dist/smart-nav-widget.js",
-  "homepage": "https://[YOUR-USERNAME].github.io/cube-nav",
+  "homepage": "https://[YOUR-USERNAME].github.io/rootCube",
   "repository": {
     "type": "git",
-    "url": "https://github.com/[YOUR-USERNAME]/cube-nav.git"
+    "url": "https://github.com/[YOUR-USERNAME]/rootCube.git"
   },
   "bugs": {
-    "url": "https://github.com/[YOUR-USERNAME]/cube-nav/issues"
+    "url": "https://github.com/[YOUR-USERNAME]/rootCube/issues"
   },
   "keywords": [
     "navigation",

@@ -4,7 +4,7 @@
 title: "Smart Navigation Cube"
 description: "An elegant 3D navigation widget that transforms into an intelligent origami-style interface"
 url: "https://[YOUR-USERNAME].github.io"
-baseurl: "/cube-nav"
+baseurl: "/rootCube"
 
 # Build settings
 markdown: kramdown
@@ -68,4 +68,4 @@ github_username: your_username
 google_analytics: # Add your GA tracking ID here
 
 # Repository info
-repository: your_username/cube-nav 
+repository: your_username/rootCube 
